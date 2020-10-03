@@ -1,0 +1,21 @@
+*terraform.tfvars
+*terraform.tfstate
+
+*terraform.tfstate.backup
+*terraform.tfstate*
+
+*.pem
+*.ppk
+*.pub
+*.crt
+*.key
+*.ignore
+*.terraform*
+*.secrets*
+
+#Project specific ignore files
+var-dynamic.tf
+var-environment.tf
+provider.tf
+AUTOGEN-*
+init.conf

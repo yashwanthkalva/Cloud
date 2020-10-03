@@ -1,0 +1,15 @@
+# Product or project name
+# Accepted value:
+# - alphanumeric,
+# - length of 3 char
+productName="k8s"
+
+# environment type
+# Accepted value:
+# - dev or prod
+envType="dev"
+
+# AWS Region
+# Accepted value:
+# - AWS Region format
+AWSRegion="ap-southeast-2"

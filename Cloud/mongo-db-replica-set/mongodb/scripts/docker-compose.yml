@@ -1,0 +1,16 @@
+version: "3.5"
+services:
+  test-mongo-container:
+    image: mongo:4.0.10
+    container_name: test-mongo-container
+    ports:
+      - "27017:27017"
+    volumes:
+      - ${MONGO_KEYFILE_AND_DATA_DIR}:/data/db
+    networks:
+      - mongodriver
+    entrypoint: [ "docker-entrypoint.sh", "mongod", "--replSet", "test-replica-set",  "--keyFile", "/data/db/${MONGO_REPLICA_KEYFILE_NAME}" ]
+networks:
+  mongodriver:
+    name: test-docker-network
+
